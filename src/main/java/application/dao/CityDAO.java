@@ -1,4 +1,6 @@
-package application;
+package application.dao;
+
+import application.entity.City;
 
 import java.sql.*;
 import java.util.ArrayList;
