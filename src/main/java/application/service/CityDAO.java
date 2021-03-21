@@ -1,6 +1,6 @@
-package application.dao;
+package application.service;
 
-import application.entity.CityModel;
+import application.model.CityModel;
 
 import java.util.List;
 

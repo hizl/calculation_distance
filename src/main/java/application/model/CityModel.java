@@ -1,4 +1,4 @@
-package application.entity;
+package application.model;
 
 public class CityModel {
 
