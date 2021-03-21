@@ -1,6 +1,6 @@
 package application.entity;
 
-public class City {
+public class CityModel {
 
 
     private String name;
@@ -9,17 +9,21 @@ public class City {
     private int id;
 
 
-    public City(int id) {
+    public CityModel(int id) {
         this.id = id;
     }
 
-    public City(String name, double latitude, double longitude) {
+
+    public CityModel() {
+    }
+
+    public CityModel(String name, double latitude, double longitude) {
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
-    public City(int id, String name, double latitude, double longitude) {
+    public CityModel(int id, String name, double latitude, double longitude) {
         this.id = id;
         this.name = name;
         this.latitude = latitude;
