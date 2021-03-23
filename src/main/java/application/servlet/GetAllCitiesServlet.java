@@ -17,6 +17,8 @@ import java.util.List;
 
 @WebServlet(name = "GetCitiesServlet", urlPatterns = "/city")
 public class GetAllCitiesServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
     private Gson gson = new Gson();
 
 

@@ -13,7 +13,6 @@ public class DBConnector {
 
 
     private DBConnector() {
-
     }
 
     public static Connection getConnection() throws Exception {
