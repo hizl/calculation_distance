@@ -69,7 +69,27 @@ public class CityDAOImpl implements CityDAO {
 
     @Override
     public void deleteCity(Integer id) {
+        final String insertQuery = "DELETE from City WHERE id=?;";
 
+
+        try {
+            con = DBConnector.getConnection();
+            pst = con.prepareStatement(insertQuery);
+
+
+            pst.setInt(1, id);
+
+            pst.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                DBConnector.closeConnectionAll(con, pst, null);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
